@@ -1,0 +1,138 @@
+/* ==================== CSS Reset & Base Styles ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light;
+  
+  /* VARDA Water-Inspired Color Theme */
+  --primary-blue: #0A4FA3;
+  --secondary-aqua: #1EBBD7;
+  --accent-mint: #38E1C4;
+  --ice-blue: #EAFBFF;
+  --white: #FFFFFF;
+  --text-dark: #2C3E50;
+  --text-muted: #6B8BA4;
+  --footer-blue: #083A73;
+  
+  /* Legacy support (mapped to new theme) */
+  --primary-color: var(--primary-blue);
+  --primary-dark: var(--footer-blue);
+  --secondary-color: var(--secondary-aqua);
+  --accent-color: var(--accent-mint);
+  --text-medium: var(--text-dark);
+  --text-light: var(--text-muted);
+  --bg-light: var(--ice-blue);
+  --border-color: #D4E6F1;
+  
+  /* Shadows - Softer for premium feel */
+  --shadow-sm: 0 2px 8px rgba(10, 79, 163, 0.08);
+  --shadow-md: 0 4px 16px rgba(10, 79, 163, 0.12);
+  --shadow-lg: 0 8px 24px rgba(10, 79, 163, 0.15);
+  --shadow-aqua: 0 4px 20px rgba(56, 225, 196, 0.3);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--text-medium);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-dark);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Selection Styling */
+::selection {
+  background: var(--secondary-color);
+  color: white;
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.1rem; }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
