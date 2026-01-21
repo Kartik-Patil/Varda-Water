@@ -29,9 +29,9 @@ import adImage1 from '../assets/images/advertisement-images/ad1.png';
 import adImage2 from '../assets/images/advertisement-images/ad2.png';
 import adImage3 from '../assets/images/advertisement-images/ad3.png';
 import adImage4 from '../assets/images/advertisement-images/ad4.png';
-import product500ml from '../assets/images/product images /varda 500ml.png';
-import product1L from '../assets/images/product images /varda 1L.png';
-import product2L from '../assets/images/product images /varda 2L.png';
+import product500ml from '../assets/images/product-images/varda 500ml.png';
+import product1L from '../assets/images/product-images/varda 1L.png';
+import product2L from '../assets/images/product-images/varda 2L.png';
 
 const Home = () => {
   // Animation variants
